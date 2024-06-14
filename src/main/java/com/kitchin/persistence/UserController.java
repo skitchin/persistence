@@ -20,4 +20,9 @@ public class UserController {
     public List<User> getUsers() {
         return userService.getAllUsers();
     }
+
+    @GetMapping("/age-equal")
+    public List<User>getUsersByAge(@RequestParam int age) {
+        return userService.getUsersByAge(age);
+    }
 }
