@@ -55,7 +55,7 @@ public class PersistenceApplication implements CommandLineRunner {
 
         // Fetch users with specified age
         List<User> userByAge = userService.getUsersByAge(78);
-        System.out.println("Users by age:");
+        System.out.println("Users by age 78");
         for (User user : userByAge) {
             System.out.println(user);
         }
